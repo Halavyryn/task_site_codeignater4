@@ -1,0 +1,29 @@
+@mixin fontDefault() {
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-size: 16px;
+  letter-spacing: 0%;
+}
+
+@mixin fontMobileMenu() {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 28px;
+  letter-spacing: 0%;
+}
+
+@mixin fontMenuCategories() {
+  color: #fff;
+  font-family: "Onest", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: left;
+  font-style: normal;
+  font-display: swap;
+  letter-spacing: 0%;
+}

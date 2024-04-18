@@ -1,0 +1,30 @@
+
+/*DIGNITY*/
+@media (max-width: 1300px) {
+  .dignity__inner{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+  }
+
+}
+
+@media (max-width: 740px) {
+  .dignity{
+    margin: 0;
+  }
+
+  .dignity__inner{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+  }
+}

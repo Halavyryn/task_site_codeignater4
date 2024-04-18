@@ -1,0 +1,60 @@
+@import 'reset';
+@import 'fonts';
+@import 'default_variables';
+@import 'mixins';
+
+/*elemnts page*/
+@import 'header';
+@import 'header-responsive';
+
+@import 'section_welcome';
+@import 'section_welcome-responsive';
+
+@import 'dignity';
+@import 'dignity-responsive';
+
+@import 'cards';
+@import 'cards-responsive';
+
+@import 'popular';
+@import 'popular-responsive';
+
+@import 'subscribe';
+@import 'subscribe-responsive';
+
+@import 'footer';
+@import 'footer-responsive';
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  font: 100% $font-site;
+  font-size: $font-size;
+  color: $white-color-site;
+  letter-spacing: $letter-spacing;
+  background-color: $bg_white;
+}
+
+.container{
+    max-width: 1300px;
+    padding: 0 7px;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+  .container{
+    padding: 0 20px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .container{
+    padding: 0 5px;
+    margin: auto;
+  }
+}

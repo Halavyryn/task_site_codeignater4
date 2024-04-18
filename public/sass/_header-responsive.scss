@@ -1,0 +1,217 @@
+
+/*RESPONSIVE HEADER*/
+
+@media (max-width: 1000px) {
+
+  /*second row*/
+  .nav__secondRow{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__logo, .nav__search, .nav__icons, .nav__basket{
+    flex: initial;
+    margin: 0;
+  }
+
+  /*nav search*/
+  .nav__search{
+    display: none;
+  }
+
+  /*nav icons*/
+  .icons__inner{
+    display: flex;
+    column-gap: 2vw;
+  }
+
+  .icon-search{
+    visibility: visible;
+  }
+
+  .icon-search img{
+    width: 32px;
+    height: 32px;
+  }
+
+  /*third row*/
+  .nav__catalog-categories{
+    padding: 0 1vw 0 1vw;
+  }
+
+  .dropdown .dropbtn, .nav__catalog-categories a {
+    font-size: 1.8vw;
+  }
+
+}
+
+/*RESPONSIVE 740PX*/
+@media (max-width: 740px) {
+
+  .header {
+    margin-bottom: 0;
+    width: 100%;
+    background: $bg_white;
+    color: $black-color-site;
+  }
+
+  .preHeader{
+    display: none;
+  }
+
+  .hamburger-menu__inner{
+    height: 75px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-menu__logo{
+    display: block;
+    aspect-ratio: 6;
+    z-index: 999;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 999;
+  }
+
+  .nav {
+    padding-top: 50px;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: $bg_white_mobile;
+    color: $black-color-site;
+    transition: 0.15s ease-in-out;
+    gap: 0;
+  }
+
+  .nav.active {
+    right: 0;
+    z-index: 999;
+  }
+
+  /*first row*/
+  .nav__firstRow {
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .nav__menu, .nav__registration{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .nav__registration{
+    order: -1;
+  }
+
+  .nav-link a{
+    display: block;
+    padding: 10px 16px;
+    @include fontMobileMenu();
+  }
+
+  .nav-link:hover a{
+    background-color: $color_hover_menu;
+  }
+
+  ul.nav__registration li:last-child{
+    display: none;
+  }
+
+  /*second row*/
+  .nav__secondRow{
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    order: -1;
+  }
+
+  .nav__logo{
+    display: none;
+  }
+
+  .nav__icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav__basket{
+    display: flex;
+    justify-content: center;
+  }
+
+  /*third row*/
+  .nav__catalog{
+    order: -1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__catalog-categories{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: $bg_white_mobile;
+  }
+
+  .nav__catalog-categories a, .nav__catalog-categories .dropbtn{
+    @include fontMobileMenu();
+    color: $black-color-site;
+  }
+
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+  }
+
+  .dropbtn{
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content{
+    background-color: $bg_white_mobile;
+    visibility: hidden;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .dropdown-content:hover{
+    background-color: $color_hover_menu;
+  }
+
+  .dropdown-content-active{
+    visibility: visible;
+  }
+
+  i.fa-caret-down{
+   display: none;
+ }
+
+}
+

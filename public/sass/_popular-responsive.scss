@@ -1,0 +1,28 @@
+/*section popular*/
+
+@media (max-width: 1450px) {
+  #popular .owl-prev, #popular .owl-next{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .popular {
+    margin:30px 0;
+  }
+
+  .popular__title {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  #popular .product{
+    margin: 0 auto;
+  }
+
+}

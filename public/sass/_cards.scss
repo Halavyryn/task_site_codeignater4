@@ -1,0 +1,120 @@
+.cards__menu-item {
+  max-width: 630px;
+  width: 100%;
+  height: 367px;
+}
+.cards__menu-item1{
+  background: center / cover no-repeat  url('../images/bg_notebook.png');
+}
+
+.cards__menu-item2{
+  background: center / cover no-repeat  url('../images/bg_tablet.png');
+}
+
+.cards__menu-item3{
+  background: center / cover no-repeat  url('../images/bg_notebook.png');
+}
+
+.cards__menu-item4{
+  background: center / cover no-repeat  url('../images/bg_tablet.png');
+}
+
+.cards__menu-item5{
+  background: center / cover no-repeat  url('../images/bg_notebook.png');
+}
+
+.cards__menu-item6{
+  background: center / cover no-repeat  url('../images/bg_tablet.png');
+}
+
+
+.category{
+  padding-top: 166px;
+  padding-left: 40px;
+}
+
+.category__title{
+  margin: 0;
+  font-family: inherit;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.category__text{
+  margin: 0;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.category__button{
+  margin-top: 28px;
+  width: 225px;
+  height: 58px;
+  background: #B71B34FF;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.category__button:hover{
+  transform: scale(1.1);
+}
+
+#cards .owl-nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*arrows and dots*/
+#cards .slider-next{
+  position: absolute;
+  top: -207px;
+  left: -75px;
+  width: 45px;
+  height: 45px;
+  background: url("../images/slider-left.svg") center center no-repeat;
+}
+
+#cards .slider-prev{
+  position: absolute;
+  top: -207px;
+  right: -75px;
+  width: 45px;
+  height: 45px;
+  transform: rotate(180deg);
+  background: url("../images/slider-left.svg") center center no-repeat;
+}
+
+#cards .owl-dots{
+  margin-left: 20px;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards .owl-dots .owl-dot span{
+  margin: 0;
+  margin-right: 17px;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  border-radius: initial;
+  background: #B71B34FF;
+}
+
+#cards .owl-dot:last-child{
+  margin-right: 0;
+}

@@ -1,0 +1,61 @@
+
+/*SECTION WELCOME*/
+@media (max-width: 740px) {
+
+  .welcome{
+    margin-top: 0;
+  }
+
+  .welcome__titleBlock{
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome__titleBlock-inner{
+    padding: 30px;
+  }
+
+  .titleBlock__title{
+    max-width: 495px;
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+    line-height: 1.2;
+  }
+
+  .titleBlock__text{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    font-size: 2.432vw;
+  }
+
+  .titleBlock__button{
+    padding: 2.162vw 2.703vh 2.162vw 2.703vh;
+    width: 100%;
+    max-width: 235px;
+    height: auto;
+    font-size: 2.703vw;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .titleBlock__text{
+    font-size: 3vw;
+  }
+
+  .titleBlock__button{
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 460px) {
+  .titleBlock__text{
+    font-size: 4vw;
+  }
+
+  .titleBlock__button{
+    font-size: 4vw;
+  }
+}
