@@ -4,7 +4,3 @@
 <IfModule !authz_core_module>
     Deny from all
 </IfModule>
-RewriteEngine On
-RewriteCond %{SERVER_PORT} ^443$ [OR]
-RewriteCond %{HTTPS} =on
-RewriteRule ^(.*)$ http://test.zovrech.site[R=301,L]
